@@ -113,13 +113,13 @@ export default function Footer() {
           />
         </div>
       </div>
-      <div className="copyright">
+      {/* <div className="copyright">
         <div className="container">
-          {/* <PText>
+          <PText>
             2021 -  Bello Oluwatomisin Profile | Designed by Bello Ol
-          </PText> */}
+          </PText>
         </div>
-      </div>
+      </div> */}
     </FooterStyles>
   );
 }
