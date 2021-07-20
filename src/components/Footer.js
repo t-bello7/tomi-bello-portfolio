@@ -34,10 +34,11 @@ const FooterStyles = styled.div`
     .footer__col1 .para {
       max-width: 100%;
     }
-    .copyright{
-      .container{
+    .copyright {
+      .container {
         div {
           margin-top: 0;
+        }
       }
     }
   }
@@ -108,6 +109,10 @@ export default function Footer() {
               {
                 title: 'Twitter',
                 path: 'https://twitter.com/__tbello',
+              },
+              {
+                title: 'Github',
+                path: 'https://github.com/t-bello7',
               },
             ]}
           />
