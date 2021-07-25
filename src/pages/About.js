@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import PText from '../components/PText';
 import Button from '../components/Button';
-import AboutImg from '../assets/images/about-page-img.png';
+import AboutImg from '../assets/images/about-page-img.jpg';
 import AboutInfoItem from '../components/AboutInfoItem';
 import ContactBanner from '../components/ContactBanner';
 
@@ -82,12 +82,15 @@ export default function About() {
             <p className="about__subheading">
               Hi, I am <span> Bello </span>
             </p>
-            <h2 className="about__heading">A freelance Web develpor</h2>
+            <h2 className="about__heading">
+              A Passionate Website and Mobile develpor
+            </h2>
             <div className="about__info">
               <PText>
-                lorem sino dnjnkl fj vkjfjkv nr fjvnjnevner v nvonervio
-                efjvneovnoe <br />
-                wncibeuiubvuier
+                I'm a hardworking and goal-oriented programmer with a year of
+                experience designing and developing websites, apps. I have a
+                thirst for knowledge and love to learn from others!
+                <br />
               </PText>
             </div>
             <Button btnText="Download CV" btnLink="#" />

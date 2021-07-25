@@ -32,7 +32,7 @@ export default function FooterCol({
 }) {
   return (
     <ColStyle>
-      <h1 claasName="heading">{heading}</h1>
+      <h1 className="heading">{heading}</h1>
       <ul>
         {links.map((item, index) => (
           <li key={index}>

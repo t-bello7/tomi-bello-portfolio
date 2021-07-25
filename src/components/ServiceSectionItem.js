@@ -22,13 +22,13 @@ const ItemStyles = styled.div`
 export default function ServiceSectionItem({
   icon = <MdDesktopMac />,
   title = 'web development',
-  descr = 'Lorems Ipsum is simply dummy text of the printing and typesettin',
+  desc = 'Lorems Ipsum is simply dummy text of the printing and typesettin',
 }) {
   return (
     <ItemStyles>
       <div className="serviceItem__icon">{icon}</div>
       <div className="serviceItem__title ">{title}</div>
-      <PText>{descr}</PText>
+      <PText>{desc}</PText>
     </ItemStyles>
   );
 }

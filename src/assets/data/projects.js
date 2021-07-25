@@ -1,40 +1,25 @@
 import { v4 as uuidv4 } from 'uuid';
-import ProjectImg from '../images/projectImg.png';
 import UTrackerImg from '../images/utracker.jpg';
-import GreenCtgImg from '../images/greenctg.jpg';
-import CoinTrackerImg from '../images/cointracker.jpg';
-import CavinImg from '../images/cavinimg.jpg';
+import Creer from '../images/creer.png';
 
 const projects = [
   {
     id: uuidv4(),
+    name: 'Creer',
+    desc: 'A collaborative platform that allows techies to share, get feedback/give feedback on ideas/issues in and around the tech ecosystem. I created the Backend API for the mobile and frontend developers to consume making use of django rest framework and postgres database.',
+    img: Creer,
+  },
+  {
+    id: uuidv4(),
     name: 'U Tracker',
-    desc: 'An application to track your all data from one place. I developed the website and the mobile app',
+    desc: 'lorems summ ipsum strat nerrto olup lorem ipsim ',
     img: UTrackerImg,
   },
   {
     id: uuidv4(),
-    name: 'Green CTG',
-    desc: 'An app to help people to get an overview of how they can make the city beautiful.',
-    img: GreenCtgImg,
-  },
-  {
-    id: uuidv4(),
-    name: 'Coin Tracker',
-    desc: 'Using this app you can track any e coin. Also you will get a good advise about investment form the professional',
-    img: CoinTrackerImg,
-  },
-  {
-    id: uuidv4(),
-    name: "Cavin's Portfolio",
-    desc: 'A portfolio for Cavin jr. A artist from New york city. The portfolio is made using ReactJs and GatsbyJs.',
-    img: CavinImg,
-  },
-  {
-    id: uuidv4(),
-    name: 'Tracking Soft',
-    desc: 'A tracking website that will show the performance of the website. Also you will get some useful advice to improve the performance.',
-    img: ProjectImg,
+    name: 'U Tracker',
+    desc: ' lorems summ ipsum strat nerrto olup lorem ipsim p',
+    img: UTrackerImg,
   },
 ];
 

@@ -49,8 +49,9 @@ export default function Footer() {
     <FooterStyles>
       <div className="container">
         <div className="footer_col1">
-          <h1 className="footer__col1__title">Bello Oluwatomisin</h1>
-          <PText>A freelance web developer.</PText>
+          <h1 className="footer__col1__title">Bello Oluwatomisin</h1>A
+          Passionate Website and Mobile developer.
+          <PText />
         </div>
         <div className="footer__col2">
           <FooterCol
@@ -68,7 +69,7 @@ export default function Footer() {
               },
               {
                 title: 'Projects',
-                path: '/',
+                path: '/projects',
                 type: 'link',
               },
               {

@@ -54,7 +54,7 @@ const NavMenuStyles = styled.div`
   @media only screen and (max-width: 768px) {
     padding: 0;
     .hide-item {
-      transfrom: translateY(calc(-100% - var(--top)));
+      transform: translateY(calc(-100% - var(--top)));
       display: none;
     }
     .mobile-menu-icon {

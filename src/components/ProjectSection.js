@@ -16,13 +16,15 @@ const ProjectSectionStyle = styled.div`
     gap: 3rem;
     margin-top: 5rem;
   }
+
   .swiper-container {
     padding-top: 8rem;
     max-width: 100%;
   }
-  .swiper-button-prev,.swiper-button-next{
-    position; absolute;
-    height:50px;
+  .swiper-button-prev,
+  .swiper-button-next {
+    position: absolute;
+    height: 50px;
     width: 50px;
     background-color: var(--deep-dark);
     z-index: 10;
@@ -36,19 +38,20 @@ const ProjectSectionStyle = styled.div`
   .swiper-button-next {
     right: 0;
   }
-  .swiper-button-prev::after, 
-  .swiper-button-next::after{
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
     font-size: 2rem;
   }
-  @media only screen and (max-width: 768px){
-    .projects__allItems{
+  @media only screen and (max-width: 768px) {
+    .projects__allItems {
       flex-direction: column;
       max-width: 400px;
       margin: 0 auto;
       margin-top: 7rem;
       gap: 5rem;
-      .projectItem__img{
-        width: 100%; 
+      .projectItem__img {
+        width: 100%;
+      }
     }
   }
 `;

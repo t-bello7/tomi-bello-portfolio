@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import HeroImg from '../assets/images/hero.png';
 import Button from './Button';
-import PText from './PText';
+// import PText from './PText';
 import SocialMediaArrow from '../assets/images/social-media-arrow.svg';
 import ScrollDownArrow from '../assets/images/scroll-down-arrow.svg';
 
@@ -39,6 +39,10 @@ const HeroStyles = styled.div`
     border: 2px solid var(--gray-1);
   }
   .hero__info {
+    PText {
+      color: var(--black);
+    }
+    /* color: var(--black); */
     margin-top: -18rem;
   }
   .hero__social,
@@ -74,7 +78,7 @@ const HeroStyles = styled.div`
   }
   .hero__social {
     img {
-      max-heigth: 45px;
+      max-height: 45px;
       width: 16px;
       margin: 0 auto;
       object-fit: contain;
@@ -94,54 +98,54 @@ const HeroStyles = styled.div`
       }
     }
   }
-  @media only screen and (max-width: 768px){
+  @media only screen and (max-width: 768px) {
     .hero {
-      min - height : 750px;
+      min-height: 750px;
     }
-    .hero__heading{
+    .hero__heading {
       font-size: 1.4rem;
       margin-bottom: -3rem;
-      .hero__name{
+      .hero__name {
         font-size: 4.5rem;
       }
     }
-    .hero__img{
+    .hero__img {
       height: 300px;
     }
-    .hero__info{
+    .hero__info {
       margin-top: 3rem;
     }
-    .hero__social{
+    .hero__social {
       right: 20px;
       bottom: 0;
       width: 20px;
       margin: 0 auto;
       object-fit: contain;
 
-      .hero__social__indicator{
+      .hero__social__indicator {
         width: 20px;
-        p{
+        p {
           font-size: 1.2rem;
         }
-        img{
+        img {
           max-height: 22px;
         }
       }
-      .hero__social__text{
-        ul{
-          li{
-            a{
+      .hero__social__text {
+        ul {
+          li {
+            a {
               font-size: 1.2rem;
             }
           }
         }
       }
     }
-    .hero__scrolldown{
-      right:0;
+    .hero__scrolldown {
+      right: 0;
       width: 20px;
       gap: 1rem;
-      p{
+      p {
         font-size: 1.3rem;
       }
     }
@@ -161,13 +165,13 @@ export default function HeroSection() {
             <img src={HeroImg} alt="" />
           </div>
           <div className="hero__info">
-            <PText>
+            {/* <PText>
               I am an undergraudate Electrical and Electronics Enigineering
               student aiming to build a career in software development. I love
               building projects and solving problems.Building scalable web
               applications is the best way I can express myself in an emerging
               web technology.
-            </PText>
+            </PText> */}
             <Button
               btnLink="/projects"
               btnText="See my Recent Projects"
