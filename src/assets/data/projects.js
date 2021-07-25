@@ -1,6 +1,7 @@
 import { v4 as uuidv4 } from 'uuid';
 import UTrackerImg from '../images/utracker.jpg';
 import Creer from '../images/creer.png';
+import Portfolio from '../images/portfolio.png';
 
 const projects = [
   {
@@ -11,9 +12,9 @@ const projects = [
   },
   {
     id: uuidv4(),
-    name: 'U Tracker',
-    desc: 'lorems summ ipsum strat nerrto olup lorem ipsim ',
-    img: UTrackerImg,
+    name: 'My Portfolio',
+    desc: 'A smoother feel to my portflio. Developed using ReactJs',
+    img: Portfolio,
   },
   {
     id: uuidv4(),
