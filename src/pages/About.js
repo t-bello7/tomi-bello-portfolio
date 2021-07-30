@@ -83,7 +83,7 @@ export default function About() {
               Hi, I am <span> Bello </span>
             </p>
             <h2 className="about__heading">
-              A Passionate Website and Mobile develpor
+              A Passionate Website and Mobile develper
             </h2>
             <div className="about__info">
               <PText>
@@ -93,7 +93,10 @@ export default function About() {
                 <br />
               </PText>
             </div>
-            <Button btnText="Download CV" btnLink="#" />
+            <Button
+              btnText="Download CV"
+              btnLink="https://docs.google.com/document/d/1TkqO04I-OXjKX-1Qe_FhI4kzeiqqrPAK2GlpREA6MBI"
+            />
           </div>
           <div className="right">
             <img src={AboutImg} alt="img " />
