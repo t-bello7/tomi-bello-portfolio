@@ -75,7 +75,13 @@ const ContactForm = () => {
   return (
     <FormStyle>
       {/* <form onSubmit={handleSubmit(onSubmit)}> */}
-      <form name="contact" method="POST" data-netlify="true">
+      <form
+        name="contact-form"
+        method="post"
+        data-netlify="true"
+        onSubmit="submit"
+      >
+        <input type="hidden" name="form-name" value="contact-form" />
         <div className="form-group">
           <label htmlFor="name">
             Your name
