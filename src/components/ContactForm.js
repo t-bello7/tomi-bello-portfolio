@@ -75,9 +75,15 @@ const ContactForm = () => {
   return (
     <FormStyle>
       {/* <form onSubmit={handleSubmit(onSubmit)}> */}
-      <form>
+      <form
+        name="contact"
+        method="POST"
+        data-netlify-honeypot="bot-field"
+        data-netlify="true"
+      >
         <div className="form-group">
           <input type="hidden" name="form-name" value="contact" />
+
           <label htmlFor="name">
             Your name
             <input
