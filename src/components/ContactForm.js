@@ -138,7 +138,9 @@ const ContactForm = () => {
           </label>
           {errors.message}
         </div>
-        <button type="submit">Send</button>
+        <button type="submit" value="Send">
+          Send
+        </button>
       </form>
     </FormStyle>
   );
