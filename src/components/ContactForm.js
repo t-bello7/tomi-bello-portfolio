@@ -44,33 +44,33 @@ const ContactForm = () => {
   // const [email, setEmail] = useState('');
   // const [message, setMessage] = useState('');
 
-  async function postFormdata({ url, data }) {
-    const fetchOptions = {
-      method: 'POST',
-      header: {
-        'Content-Type': 'application/json, text/plain, */*',
-        Accept: 'application/json',
-      },
-      body: data,
-    };
-    const response = await fetch(url, fetchOptions);
-    if (!response.ok) {
-      const errorMessage = await response.text();
-      throw new Error(errorMessage);
-    }
-    return response.json();
-  }
+  // async function postFormdata({ url, data }) {
+  //   const fetchOptions = {
+  //     method: 'POST',
+  //     header: {
+  //       'Content-Type': 'application/json, text/plain, */*',
+  //       Accept: 'application/json',
+  //     },
+  //     body: data,
+  //   };
+  //   const response = await fetch(url, fetchOptions);
+  //   if (!response.ok) {
+  //     const errorMessage = await response.text();
+  //     throw new Error(errorMessage);
+  //   }
+  //   return response.json();
+  // }
   const {
     register,
-    handleSubmit,
+    // handleSubmit,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => {
-    // console.log(data);
-    // console.log(typeof data);
-    const dataStringify = JSON.stringify(data);
-    postFormdata('//localhost:3000/contact', dataStringify);
-  };
+  // const onSubmit = (data) => {
+  //   // console.log(data);
+  //   // console.log(typeof data);
+  //   const dataStringify = JSON.stringify(data);
+  //   postFormdata('//localhost:3000/contact', dataStringify);
+  // };
 
   return (
     <FormStyle>

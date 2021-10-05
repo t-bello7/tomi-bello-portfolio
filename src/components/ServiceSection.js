@@ -1,5 +1,5 @@
 import React from 'react';
-import { MdCode, MdDesktopMac, MdPhoneAndroid } from 'react-icons/md';
+import { MdCode, MdDesktopMac } from 'react-icons/md';
 import styled from 'styled-components';
 import SectionTitle from './SectionTitle';
 import ServiceSectionItem from './ServiceSectionItem';

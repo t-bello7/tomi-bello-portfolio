@@ -2,7 +2,7 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation } from 'swiper';
 import styled from 'styled-components';
-import { FaGithub } from 'react-icons/fa';
+// import { FaGithub } from 'react-icons/fa';
 import SectionTitle from './SectionTitle';
 import projects from '../assets/data/projects';
 import ProjectItem from './ProjectItem';
