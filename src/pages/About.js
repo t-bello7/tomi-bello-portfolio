@@ -45,7 +45,7 @@ const AboutPageStyles = styled.div`
     }
   }
   .about__info__items {
-    marign-top: 15rem;
+    margin-top: 15rem;
   }
   .about__info__item {
     margin-bottom: 10rem;

@@ -10,7 +10,7 @@ const ServiceItemStyles = styled.div`
     display: flex;
     gap: 10rem;
     justify-content: space-between;
-    marign-top: 5rem;
+    margin-top: 5rem;
   }
   @media only screen and (max-width: 768px) {
     .service__allItems {
@@ -33,11 +33,11 @@ export default function ServiceSection() {
             title="Website Development"
             desc="I can create a pixel perfect website for you. "
           />
-          <ServiceSectionItem
+          {/* <ServiceSectionItem
             icon={<MdPhoneAndroid />}
             title="Mobile Application Development"
             desc="Let me bring your creative ideas and features to live in a mobile application."
-          />
+          /> */}
           <ServiceSectionItem
             icon={<MdCode />}
             title="Database and Cloud Management"

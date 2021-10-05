@@ -48,7 +48,7 @@ const ContactForm = () => {
     const fetchOptions = {
       method: 'POST',
       header: {
-        'Content-Type': 'application/json',
+        'Content-Type': 'application/json, text/plain, */*',
         Accept: 'application/json',
       },
       body: data,
@@ -69,15 +69,15 @@ const ContactForm = () => {
     // console.log(data);
     // console.log(typeof data);
     const dataStringify = JSON.stringify(data);
-    console.log(typeof dataStringify);
-    console.log(dataStringify);
-    postFormdata('http://127.0.0.1:3030/contact', dataStringify);
+    postFormdata('//localhost:3000/contact', dataStringify);
   };
 
   return (
     <FormStyle>
-      <form onSubmit={handleSubmit(onSubmit)}>
+      {/* <form onSubmit={handleSubmit(onSubmit)}> */}
+      <form>
         <div className="form-group">
+          <input type="hidden" name="form-name" value="contact" />
           <label htmlFor="name">
             Your name
             <input
