@@ -1,5 +1,5 @@
 import { v4 as uuidv4 } from 'uuid';
-import UTrackerImg from '../images/utracker.jpg';
+// import UTrackerImg from '../images/utracker.jpg';
 import Creer from '../images/creer.png';
 import Portfolio from '../images/portfolio.png';
 import Finconnect from '../images/finnconnect.png';
