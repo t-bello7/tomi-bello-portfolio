@@ -81,7 +81,12 @@ const ContactForm = () => {
         data-netlify="true"
         onSubmit="submit"
       >
-        <input type="hidden" name="form-name" value="contact-form" />
+        <input
+          type="hidden"
+          name="form-name"
+          value="contact-form"
+          actions="/"
+        />
         <div className="form-group">
           <label htmlFor="name">
             Your name
