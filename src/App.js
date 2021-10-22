@@ -23,9 +23,6 @@ export default function App() {
             <Route path="/projects">
               <Projects />
             </Route>
-            {/* <Route path="/project-detail">
-              <ProjectDetail />
-            </Route> */}
             <Route path="/contact">
               <Contact />
             </Route>

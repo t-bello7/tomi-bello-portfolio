@@ -31,7 +31,11 @@ export default function ServiceSection() {
           <ServiceSectionItem
             icon={<MdDesktopMac />}
             title="Website Development"
-            desc="I can create a pixel perfect website for you. "
+            desc="I enjoy bringing ideas and design to life with pixel-perfect websites."
+            subTitle="Languages I speak:"
+            subDescription="Python, Javascript, CSS, HTML"
+            subTitleTwo="Dev Tools:"
+            subDescTwo="Django, React, Vscode, Eslint, Pylint, Pep, Insomia"
           />
           {/* <ServiceSectionItem
             icon={<MdPhoneAndroid />}
@@ -41,7 +45,9 @@ export default function ServiceSection() {
           <ServiceSectionItem
             icon={<MdCode />}
             title="Database and Cloud Management"
-            desc="I would develop your applications with the best cloud technology and pratices."
+            desc="I would develop your applications with the best cloud technology and practices."
+            subTitle="Databases I design:"
+            subDescription="MongoDB, Postgresql"
           />
         </div>
       </div>

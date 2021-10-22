@@ -9,11 +9,24 @@ const ProjectItemStyle = styled.div`
     height: 400px;
     overflow: hidden;
     border-radius: 12px;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     border: 3px solid var(--gray-2);
     img {
       height: 100%;
     }
+  }
+  .projectItem__button {
+    align-self: center;
+    display: flex;
+    gap: 1rem;
+  }
+  .projectItem__button button {
+    border: none;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    color: var(--deep-dark);
   }
   .projectItem__info {
     margin-top: 1rem;
@@ -40,12 +53,26 @@ export default function ProjectItem({
   img = projectImg,
   title = 'Project Name',
   desc = 'Lorem ipsum dolor sit amet',
+  liveLink = '/projects',
+  githubLink = '/',
 }) {
   return (
     <ProjectItemStyle>
-      <Link to="/projects" className="projectItem__img">
-        <img src={img} alt="project img" />
-      </Link>
+      <div className="projectItem__img" style={{ background: `url(${img})` }}>
+        <div className="projectStacks">
+          {/* {stacks.map((value, key) => (
+            <div>{key}</div>
+          ))} */}
+        </div>
+        <div className="projectItem__button">
+          <a href={liveLink}>
+            <button type="button"> Visit Website</button>
+          </a>
+          <a href={githubLink}>
+            <button type="button">Visit Github Repo</button>
+          </a>
+        </div>
+      </div>
       <div className="projectItem__info">
         <Link to="#">
           <h3 className="projectItem__title">{title}</h3>

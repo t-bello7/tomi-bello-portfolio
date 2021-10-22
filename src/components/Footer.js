@@ -8,7 +8,7 @@ const FooterStyles = styled.div`
   background-color: var(--deep-dark);
   .container {
     display: flex;
-    gap: 3rem;
+    gap: 4rem;
   }
   .footer__col1 {
     flex: 2;
@@ -48,11 +48,6 @@ export default function Footer() {
   return (
     <FooterStyles>
       <div className="container">
-        <div className="footer_col1">
-          <h1 className="footer__col1__title">Bello Oluwatomisin</h1>A
-          Passionate Website and Mobile developer.
-          <PText />
-        </div>
         <div className="footer__col2">
           <FooterCol
             heading=""
@@ -80,6 +75,12 @@ export default function Footer() {
             ]}
           />
         </div>
+        <div className="footer_col1">
+          <h1 className="footer__col1__title">Bello Oluwatomisin</h1>A
+          Passionate Web developer.
+          <PText />
+        </div>
+
         <div className="footer__col3">
           <FooterCol
             heading="Contact Info"
@@ -93,7 +94,7 @@ export default function Footer() {
                 path: 'mailto:bello4aus@outlook.com',
               },
               {
-                title: '49, Odejayi Crescent, Lagos, Nigeria.',
+                title: 'Lagos, Nigeria.',
                 path: 'https://www.google.com/maps/place/49+Odejayi+Cres,+Idi+Oro,+Lagos/@6.5169863,3.3617818,17z/data=!3m1!4b1!4m5!3m4!1s0x103b8c492ce272c1:0xe31c9532abbe8274!8m2!3d6.516981!4d3.3639758',
               },
             ]}

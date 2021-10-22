@@ -7,6 +7,7 @@ import SectionTitle from './SectionTitle';
 import projects from '../assets/data/projects';
 import ProjectItem from './ProjectItem';
 import 'swiper/swiper-bundle.min.css';
+import Button from './Button';
 
 SwiperCore.use([Navigation]);
 
@@ -88,12 +89,16 @@ export default function ProjectSection() {
                     title={project.name}
                     img={project.img}
                     desc={project.desc}
+                    liveLink={project.liveLink}
+                    githubLink={project.githubLink}
+                    stacks={project.stacks}
                   />
                 </SwiperSlide>
               );
             })}
           </Swiper>
         </div>
+        <Button btnText="More" btnLink="/projects" />
       </div>
     </ProjectSectionStyle>
   );
