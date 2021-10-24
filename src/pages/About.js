@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import PText from '../components/PText';
 import Button from '../components/Button';
-import AboutImg from '../assets/images/about-page-img.jpg';
+// import AboutImg from '../assets/images/about-page-img.jpg';
 import AboutInfoItem from '../components/AboutInfoItem';
 import ContactBanner from '../components/ContactBanner';
 
@@ -88,8 +88,8 @@ export default function About() {
             <div className="about__info">
               <PText>
                 I'm a hardworking and goal-oriented programmer with a year of
-                experience designing and developing websites, apps. I have a
-                thirst for knowledge and love to learn from others!
+                experience designing and developing applications. I have a
+                thirst for knowledge.
                 <br />
               </PText>
             </div>
@@ -98,9 +98,9 @@ export default function About() {
               btnLink="https://docs.google.com/document/d/1TkqO04I-OXjKX-1Qe_FhI4kzeiqqrPAK2GlpREA6MBI"
             />
           </div>
-          <div className="right">
+          {/* <div className="right">
             <img src={AboutImg} alt="img " />
-          </div>
+          </div> */}
         </div>
         <div className="about__info__items">
           <div className="about__info__item">
