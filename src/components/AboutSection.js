@@ -84,10 +84,10 @@ export default function AboutSection() {
             heading="About me"
           />
           <PText>
-            I am an undergraudate Electrical and Electronics Enigineering
-            student aiming to build a career in software development.Building
-            scalable applications is the best way I can express myself as an
-            Engineer.
+            An undergraudate Electrical and Electronics Enigneering student
+            aiming to build a career in software development.I write and build
+            scalable applications. I am currently freelancing to improve on my
+            skills.
           </PText>
           <div className="aboutSection__buttons">
             <Button btnLink="/projects" btnText="Works" />

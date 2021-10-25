@@ -7,26 +7,7 @@ const ProjectItemStyle = styled.div`
   .image {
     position: relative;
   }
-  .projectItem__stacks {
-    position: absolute;
-    top: 0;
-    left: 0;
 
-    width: 100%;
-    /* width: 100px; */
-    height: 100%;
-    display: flex;
-    /* background: black; */
-    /* flex-direction: column; */
-    gap: 1rem;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.25s;
-  }
-  .projectItem__stacks:hover {
-    opacity: 1;
-  }
   .projectItem__stack {
     background: #262626;
     width: auto;
@@ -53,12 +34,35 @@ const ProjectItemStyle = styled.div`
     gap: 1rem;
   }
   .projectItem__button button {
+    position: relative;
     border: 1px solid;
     background: var(--deep-dark);
     padding: 1rem;
     margin-bottom: 1rem;
     border-radius: 0.5rem;
     cursor: pointer;
+    z-index: 2;
+  }
+  .projectItem__stacks {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    /* width: 100px; */
+    height: 100%;
+    display: flex;
+    /* background: black; */
+    /* flex-direction: column; */
+    z-index: 1;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+  }
+  .projectItem__stacks:hover {
+    opacity: 1;
   }
   .projectItem__info {
     margin-top: 1rem;
