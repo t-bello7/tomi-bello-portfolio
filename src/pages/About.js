@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import PText from '../components/PText';
-import Button from '../components/Button';
 // import AboutImg from '../assets/images/about-page-img.jpg';
 import AboutInfoItem from '../components/AboutInfoItem';
 import ContactBanner from '../components/ContactBanner';
@@ -38,6 +37,15 @@ const AboutPageStyles = styled.div`
     .para {
       max-width: 100%;
     }
+  }
+
+  .left button {
+    border: 1px solid;
+    background: var(--deep-dark);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
   }
   .right {
     img {
@@ -93,10 +101,9 @@ export default function About() {
                 <br />
               </PText>
             </div>
-            <Button
-              btnText="Download CV"
-              btnLink="https://docs.google.com/document/d/1TkqO04I-OXjKX-1Qe_FhI4kzeiqqrPAK2GlpREA6MBI"
-            />
+            <a href="https://drive.google.com/file/d/1FocAAsEITlYGYchT8GNf8BhvMPPUtRWX/view?usp=sharing">
+              <button type="button">Download CV</button>
+            </a>
           </div>
           {/* <div className="right">
             <img src={AboutImg} alt="img " />
