@@ -6,8 +6,29 @@ import Creer from '../images/creer.png';
 import Portfolio from '../images/portfolio.png';
 import Finconnect from '../images/finnconnect.png';
 import Loruki from '../images/loruki.png';
+import Space from '../images/space.png';
 
 const projects = [
+  {
+    id: uuidv4(),
+    name: 'Space Project',
+    desc: 'Ever thought of going to space ? Then check out my Mobile and User friendly personal project of a Space tourism website',
+    img: Space,
+    // stacks: [SiDjango, SiPostgresql],
+    stacks: ['Frontend', 'Html', 'CSS3', 'Javascript'],
+    liveLink: 'https://tour-space.netlify.app/',
+    githubLink: 'https://github.com/t-bello7/space-travel',
+  },
+  {
+    id: uuidv4(),
+    name: 'FinConnect',
+    desc: ' A listing website for listing financiaal institutions.',
+    img: Finconnect,
+    // stacks: [SiDjango, FaHtml5, FaCss3Alt, SiJavascript],
+    stacks: ['Fullstack', 'Django', 'HTML5', 'CSS3', 'JavaScript'],
+    liveLink: 'https://finconnect.herokuapp.com/',
+    githubLink: 'https://github.com/t-bello7/finconnect',
+  },
   {
     id: uuidv4(),
     name: 'Creer',
@@ -28,16 +49,7 @@ const projects = [
     liveLink: 'https://tomibello.netlify.app/',
     githubLink: 'https://github.com/t-bello7/tomi-bello-portfolio',
   },
-  {
-    id: uuidv4(),
-    name: 'FinConnect',
-    desc: ' A listing website for listing financiaal institutions.',
-    img: Finconnect,
-    // stacks: [SiDjango, FaHtml5, FaCss3Alt, SiJavascript],
-    stacks: ['Fullstack', 'Django', 'HTML5', 'CSS3', 'JavaScript'],
-    liveLink: 'https://finconnect.herokuapp.com/',
-    githubLink: 'https://github.com/t-bello7/finconnect',
-  },
+
   {
     id: uuidv4(),
     name: 'Loruki',

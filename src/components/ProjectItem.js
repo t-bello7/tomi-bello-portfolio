@@ -18,15 +18,15 @@ const ProjectItemStyle = styled.div`
   .projectItem__img {
     width: 100%;
     height: 400px;
+    background-size: 10px 10px;
+    background-repeat: no-repeat;
+    background-origin: inherit;
     overflow: hidden;
     border-radius: 12px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     border: 3px solid var(--gray-2);
-    img {
-      height: 100%;
-    }
   }
   .projectItem__button {
     align-self: center;
@@ -47,9 +47,7 @@ const ProjectItemStyle = styled.div`
     position: absolute;
     top: 0;
     left: 0;
-
     width: 100%;
-    /* width: 100px; */
     height: 100%;
     display: flex;
     /* background: black; */
